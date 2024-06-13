@@ -62,6 +62,7 @@ export default function Product(props) {
   return isEdit ? (
     <form onSubmit={saveProduct}>
       <input
+      className='border border-black-900'
         type='text'
         value={editValue}
         onChange={(e) => setEditValue(e.target.value)}
